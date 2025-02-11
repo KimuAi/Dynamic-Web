@@ -8,7 +8,7 @@ const resultaatVeld = document.getElementById
 berekenKnop.addEventListener('click', () =>{
 const nr1 = Number(getal1Input.value);
 const nr2 = Number(getal2Input.value);
-})
+
 
 if (isNaN(nr1) || isNaN(nr2)){
     resultaatVeld.textcontent = "voer een getal";
@@ -17,3 +17,4 @@ if (isNaN(nr1) || isNaN(nr2)){
 
 const som = nr1 + nr2;
 resultaatVeld.textcontent = "${som}";
+})
