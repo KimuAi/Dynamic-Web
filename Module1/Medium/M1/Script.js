@@ -1,17 +1,14 @@
-'use strict';
+'use strict'
 
-let specialelements = document.querySelectorAll('.special');
-specialelements.forEach(element => {
+// Selecteer alle elementen met class "special" en maak de tekst rood
+const specialElements = document.querySelectorAll('.special');
+specialElements.forEach(element => {
     element.style.color = 'red';
 });
 
+// Selecteer de tweede paragraaf en onderstreep de tekst
+const secondParagraph = document.getElementsByTagName('p')[1];
+secondParagraph.style.textDecoration = 'underline';
 
-let secondP = document.querySelector('pinth-child(2)');
-secondP.computedStyleMap.textDecoration = 'underline';
-
-let output = document.getElementById('output');
-output.textContent = `Aantal special elementen: ${specialelements.length}`;
-
-let specialelementsAlt = document.getElementsByClassName(`special`);
-console.log(`Gevonden met getElementsByClassName: ${specialelementsAlt.length}`);
-
+// Toon het aantal "special" elementen in de output div
+document.getElementById('output').textContent = `Aantal special elementen: ${specialElements.length}`;
