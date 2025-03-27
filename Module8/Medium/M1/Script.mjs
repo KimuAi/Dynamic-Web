@@ -8,7 +8,7 @@ const cachedNotice = document.getElementById("cached-notice");
 // Functie om weer via OpenWeatherMap te openen
 function fetchWeather(lat, lon) {
     loader.style.display = 'block';
-    fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric&lang=nl`)
+    fetch(`api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=564671a5a4cb11ba7597f32ddbde5f3b`)
         .then(response => response.json())
         .then(data => {
             loader.style.display = 'none';
